@@ -15,7 +15,8 @@
     "deploy:localhost": "hardhat run scripts/deploy.js --network localhost",
     "deploy:testnet": "hardhat run scripts/deploy.js --network fhevmTestnet",
     "node": "hardhat node",
-    "clean": "hardhat clean"
+    "clean": "hardhat clean",
+    "vercel-build": "next build"
   },
   "dependencies": {
     "next": "^14.0.4",
@@ -43,11 +44,14 @@
     "postcss": "^8.4.32",
     "@nomicfoundation/hardhat-toolbox": "^4.0.0",
     "@nomicfoundation/hardhat-chai-matchers": "^2.0.0",
-    "@nomiclabs/hardhat-ethers": "^2.2.3",
+    "@nomicfoundation/hardhat-ethers": "^3.0.0",
     "hardhat": "^2.19.4",
     "hardhat-gas-reporter": "^1.0.9",
     "solidity-coverage": "^0.8.5",
     "chai": "^4.3.10"
+  },
+  "optionalDependencies": {
+    "fhevm": "^0.3.0"
   },
   "keywords": [
     "FHE",

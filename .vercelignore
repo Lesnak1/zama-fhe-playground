@@ -1,0 +1,23 @@
+# Contract build artifacts
+contracts/
+test/
+scripts/
+hardhat.config.js
+deployments/
+artifacts/
+cache/
+coverage/
+
+# Hardhat files
+*.log
+.env
+.env.local
+
+# Test files
+*.test.js
+*.test.ts
+coverage.json
+
+# Documentation
+docs/
+README.md
