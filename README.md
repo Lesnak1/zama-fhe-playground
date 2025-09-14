@@ -2,6 +2,8 @@
 
 A comprehensive, interactive platform for learning and experimenting with Fully Homomorphic Encryption (FHE) using Zama's FHEVM technology.
 
+## 🚀 **Click for DEMO** ⬇️⬇️
+
 [![Zama FHE Playground](https://img.shields.io/badge/Zama-FHE%20Playground-FCDC00?style=for-the-badge&logo=blockchain&logoColor=black)](https://zama-fhe-playground.vercel.app/)
 
 ## ✨ Features
