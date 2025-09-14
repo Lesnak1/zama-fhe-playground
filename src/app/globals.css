@@ -193,6 +193,24 @@ a {
   }
 }
 
+@keyframes shimmerText {
+  0%, 100% {
+    color: var(--custom-yellow);
+    text-shadow: 
+      0 0 10px rgba(252, 220, 0, 0.5),
+      0 0 20px rgba(252, 220, 0, 0.3),
+      0 0 30px rgba(252, 220, 0, 0.2);
+  }
+  50% {
+    color: rgb(254, 240, 138);
+    text-shadow: 
+      0 0 15px rgba(252, 220, 0, 0.8),
+      0 0 30px rgba(252, 220, 0, 0.5),
+      0 0 45px rgba(252, 220, 0, 0.3),
+      0 0 60px rgba(252, 220, 0, 0.1);
+  }
+}
+
 .animate-pulse {
   animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
 }
@@ -206,6 +224,10 @@ a {
   );
   background-size: 200% auto;
   animation: shimmer 3s linear infinite;
+}
+
+.shimmer-text {
+  animation: shimmerText 4s ease-in-out infinite;
 }
 
 /* Scrollbar styling */

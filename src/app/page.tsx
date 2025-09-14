@@ -74,7 +74,7 @@ export default function HomePage() {
           >
             <span className="text-custom-yellow glow-text">Learn FHE</span> <br />
             Build the Future of <br />
-            <span className="bg-gradient-to-r from-custom-yellow via-yellow-300 to-custom-yellow bg-clip-text text-transparent shimmer-effect">
+            <span className="text-custom-yellow glow-text shimmer-text">
               Private Computing
             </span>
           </motion.h1>
