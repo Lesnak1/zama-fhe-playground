@@ -210,7 +210,7 @@ export default function LearnPage() {
                           <Clock className="w-4 h-4 mr-2" />
                           ~{path.duration} minutes
                         </div>
-                        <Button className="w-full mt-4" onClick={() => setSelectedPath(path.id)}>
+                        <Button className="w-full mt-4" onClick={() => _setSelectedPath(path.id)}>
                           Start Learning
                           <ArrowRight className="w-4 h-4 ml-2" />
                         </Button>

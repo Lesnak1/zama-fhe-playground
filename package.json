@@ -7,7 +7,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
+    "lint": "next lint --fix",
+    "analyze": "ANALYZE=true next build",
     "compile": "hardhat compile",
     "test": "hardhat test",
     "test:coverage": "hardhat coverage",
@@ -15,8 +16,7 @@
     "deploy:localhost": "hardhat run scripts/deploy.js --network localhost",
     "deploy:testnet": "hardhat run scripts/deploy.js --network fhevmTestnet",
     "node": "hardhat node",
-    "clean": "hardhat clean",
-    "vercel-build": "next build"
+    "clean": "hardhat clean"
   },
   "dependencies": {
     "next": "^14.0.4",

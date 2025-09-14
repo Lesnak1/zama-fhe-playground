@@ -27,7 +27,7 @@ body {
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
+  color: var(--foreground);
   background: var(--background);
 }
 
