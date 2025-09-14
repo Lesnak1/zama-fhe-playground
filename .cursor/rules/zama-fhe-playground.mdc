@@ -1,0 +1,121 @@
+---
+alwaysApply: true
+description: "Zama FHE Playground - Comprehensive development rules for building high-quality, professional FHE learning platform"
+---
+
+# Zama FHE Playground Development Rules
+
+## 🎯 Project Overview
+You are building an advanced, interactive FHE (Fully Homomorphic Encryption) Playground and Learning Platform for Zama Protocol. This is a professional-grade application that will be used by the Zama team and community.
+
+## 🎨 Design System & Theme
+- **Primary Color**: #FCDC00 (Custom Yellow) - Use for accents, highlights, and CTAs
+- **Background**: #000000 (Pure Black) - Main background color
+- **Text**: White for primary text, gray-400 for secondary text
+- **Font**: Space Grotesk (Google Fonts) - Modern, technical feel
+- **Effects**: Use glow effects with yellow shadows for important elements
+- **Gradient**: Subtle radial gradients with yellow tints for depth
+- **Icons**: Material Icons and Lucide React for consistency
+
+## 🏗 Architecture Principles
+1. **Component-First**: Build reusable, modular components
+2. **Type Safety**: Comprehensive TypeScript coverage - NO `any` types
+3. **Performance**: Optimize for speed and efficiency
+4. **Accessibility**: WCAG 2.1 AA compliance
+5. **Mobile-First**: Responsive design for all screen sizes
+6. **SEO Ready**: Proper meta tags and structured data
+
+## 📁 Project Structure
+```
+src/
+├── app/              # Next.js App Router
+├── components/       # Reusable UI components
+├── lib/             # Utilities and configurations
+├── types/           # TypeScript type definitions
+├── hooks/           # Custom React hooks
+├── utils/           # Helper functions
+└── constants/       # Application constants
+```
+
+## 🔥 Core Features to Implement
+1. **Interactive FHE Playground**
+   - Real-time encryption/decryption demos
+   - Visual operation workflows
+   - Performance benchmarking
+
+2. **Learning Hub**
+   - Progressive difficulty tutorials
+   - Interactive code examples
+   - Achievement system
+
+3. **Smart Contract Studio**
+   - Monaco Editor integration
+   - FHEVM deployment tools
+   - Gas estimation
+
+4. **Community Showcase**
+   - User project gallery
+   - Code sharing platform
+   - Rating system
+
+## 💻 Technical Requirements
+- **Framework**: Next.js 14+ with App Router
+- **Styling**: Tailwind CSS + Custom CSS variables
+- **Animations**: Framer Motion for smooth interactions
+- **Code Editing**: Monaco Editor for smart contract development
+- **Blockchain**: Integration with Zama FHEVM
+- **Deployment**: Vercel-optimized build
+
+## 📦 Dependencies
+```json
+{
+  "next": "^14.0.0",
+  "@types/node": "^20.0.0",
+  "@types/react": "^18.0.0",
+  "typescript": "^5.0.0",
+  "tailwindcss": "^3.3.0",
+  "framer-motion": "^10.0.0",
+  "@monaco-editor/react": "^4.6.0",
+  "lucide-react": "^0.263.0",
+  "ethers": "^6.0.0"
+}
+```
+
+## 🎯 Code Quality Standards
+1. **Zero Warnings**: Build must be warning-free
+2. **ESLint**: Follow strict linting rules
+3. **Prettier**: Consistent code formatting
+4. **Type Safety**: Full TypeScript coverage
+5. **Performance**: Lighthouse score 90+ on all metrics
+6. **Testing**: Unit tests for critical functions
+
+## 🚀 Development Workflow
+1. Always start with component design and type definitions
+2. Implement core functionality first, then enhance
+3. Test on mobile devices throughout development
+4. Optimize bundle size and loading performance
+5. Ensure zero console errors in production
+
+## 🔐 Security Considerations
+- Sanitize all user inputs
+- Secure blockchain interactions
+- Environment variable protection
+- XSS prevention measures
+
+## 🌟 User Experience Guidelines
+- **Loading States**: Always show loading indicators
+- **Error Handling**: Graceful error messages and recovery
+- **Accessibility**: Keyboard navigation and screen reader support
+- **Performance**: < 3s initial load time
+- **Responsive**: Perfect on mobile, tablet, and desktop
+
+## 📊 Success Metrics
+The application must be:
+- ✅ Production-ready quality
+- ✅ Community-approved design
+- ✅ High utility for developers
+- ✅ Educational and engaging
+- ✅ Technically impressive
+- ✅ Zero deployment issues
+
+Remember: This is a showcase project for Zama Protocol. Every detail matters - from pixel-perfect design to flawless functionality.
