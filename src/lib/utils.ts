@@ -83,12 +83,12 @@ export function generateRandomColor(): string {
 export function debounce<T extends (...args: any[]) => any>(
   func: T,
   delay: number
-): (...args: Parameters<T>) => void {
+): (..._args: Parameters<T>) => void {
   let timeoutId: NodeJS.Timeout
   
-  return (...args: Parameters<T>) => {
+  return (..._args: Parameters<T>) => {
     clearTimeout(timeoutId)
-    timeoutId = setTimeout(() => func.apply(null, args), delay)
+    timeoutId = setTimeout(() => func.apply(null, _args), delay)
   }
 }
 
@@ -150,7 +150,7 @@ export async function copyToClipboard(text: string): Promise<boolean> {
       return success
     }
   } catch (error) {
-    console.error('Failed to copy to clipboard:', error)
+    // console.error('Failed to copy to clipboard:', error)
     return false
   }
 }
@@ -165,7 +165,7 @@ export const storage = {
       const item = localStorage.getItem(key)
       return item ? JSON.parse(item) : defaultValue || null
     } catch (error) {
-      console.error(`Error reading localStorage key "${key}":`, error)
+      // console.error(`Error reading localStorage key "${key}":`, error)
       return defaultValue || null
     }
   },
@@ -176,7 +176,7 @@ export const storage = {
       localStorage.setItem(key, JSON.stringify(value))
       return true
     } catch (error) {
-      console.error(`Error setting localStorage key "${key}":`, error)
+      // console.error(`Error setting localStorage key "${key}":`, error)
       return false
     }
   },
@@ -187,7 +187,7 @@ export const storage = {
       localStorage.removeItem(key)
       return true
     } catch (error) {
-      console.error(`Error removing localStorage key "${key}":`, error)
+      // console.error(`Error removing localStorage key "${key}":`, error)
       return false
     }
   },
@@ -198,7 +198,7 @@ export const storage = {
       localStorage.clear()
       return true
     } catch (error) {
-      console.error('Error clearing localStorage:', error)
+      // console.error('Error clearing localStorage:', error)
       return false
     }
   }

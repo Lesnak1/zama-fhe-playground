@@ -2,7 +2,6 @@
 
 import { motion } from 'framer-motion'
 import { ArrowRight, Code2, BookOpen, Users, Zap } from 'lucide-react'
-import Image from 'next/image'
 import Link from 'next/link'
 import { Header } from '@/components/layout/Header'
 import { Footer } from '@/components/layout/Footer'
@@ -10,8 +9,7 @@ import { Footer } from '@/components/layout/Footer'
 export default function HomePage() {
   const fadeInUp = {
     initial: { opacity: 0, y: 60 },
-    animate: { opacity: 1, y: 0 },
-    transition: { duration: 0.6 }
+    animate: { opacity: 1, y: 0 }
   }
 
   const staggerChildren = {
@@ -71,6 +69,7 @@ export default function HomePage() {
           <motion.h1 
             className="text-4xl md:text-6xl lg:text-8xl font-bold leading-tight mb-8"
             variants={fadeInUp}
+            transition={{ duration: 0.6 }}
           >
             <span className="text-custom-yellow glow-text">Learn FHE</span> <br />
             Build the Future of <br />
@@ -82,6 +81,7 @@ export default function HomePage() {
           <motion.p 
             className="text-lg md:text-2xl text-gray-400 max-w-4xl mx-auto mb-12"
             variants={fadeInUp}
+            transition={{ duration: 0.6, delay: 0.2 }}
           >
             Master Fully Homomorphic Encryption with our interactive playground. 
             Build confidential smart contracts, explore privacy-preserving applications, 
@@ -91,6 +91,7 @@ export default function HomePage() {
           <motion.div 
             className="flex flex-col sm:flex-row justify-center items-center gap-6 mb-16"
             variants={fadeInUp}
+            transition={{ duration: 0.6, delay: 0.4 }}
           >
             <Link 
               href="/playground"

@@ -110,7 +110,7 @@ const achievements = [
 ]
 
 export default function LearnPage() {
-  const [selectedPath, setSelectedPath] = useState<string | null>(null)
+  const [_selectedPath, _setSelectedPath] = useState<string | null>(null)
   const [activeTab, setActiveTab] = useState<'paths' | 'modules' | 'achievements'>('paths')
 
   return (

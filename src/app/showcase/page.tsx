@@ -3,14 +3,12 @@
 import { useState } from 'react'
 import { motion } from 'framer-motion'
 import { Users, Github, ExternalLink, Heart, Filter, Search, Star, Calendar, Code } from 'lucide-react'
-import Image from 'next/image'
 import Link from 'next/link'
 import { Header } from '@/components/layout/Header'
 import { Footer } from '@/components/layout/Footer'
 import { Button } from '@/components/ui/Button'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/Card'
 import { Badge } from '@/components/ui/Badge'
-import { cn } from '@/lib/utils'
 
 const categories = ['All', 'DeFi', 'Gaming', 'Healthcare', 'Voting', 'Identity', 'Utility']
 const difficulties = ['All', 'Beginner', 'Intermediate', 'Advanced']

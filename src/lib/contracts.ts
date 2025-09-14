@@ -87,7 +87,7 @@ export class ConfidentialVotingService {
         this.signer
       )
     } catch (error) {
-      console.error('Failed to connect to contract:', error)
+      // console.error('Failed to connect to contract:', error)
       throw error
     }
   }
@@ -165,10 +165,10 @@ export class ConfidentialVotingService {
     const tx = await this.contract.createProposal(description)
     const receipt = await tx.wait()
     
-    // Find ProposalCreated event
-    const event = receipt.logs.find((log: any) => 
-      log.topics[0] === ethers.id('ProposalCreated(uint256,string,uint256)')
-    )
+    // Find ProposalCreated event (could be used for event data)
+    // const event = receipt.logs.find((log: any) => 
+    //   log.topics[0] === ethers.id('ProposalCreated(uint256,string,uint256)')
+    // )
     
     return tx.hash
   }
@@ -212,7 +212,7 @@ export class ConfidentialVotingService {
   }
 
   // Event listeners
-  onProposalCreated(callback: (proposalId: number, description: string, endTime: number) => void) {
+  onProposalCreated(callback: (_proposalId: number, _description: string, _endTime: number) => void) {
     if (!this.contract) return
 
     this.contract.on('ProposalCreated', (proposalId, description, endTime) => {
@@ -220,7 +220,7 @@ export class ConfidentialVotingService {
     })
   }
 
-  onVoteCast(callback: (proposalId: number, voter: string) => void) {
+  onVoteCast(callback: (_proposalId: number, _voter: string) => void) {
     if (!this.contract) return
 
     this.contract.on('VoteCast', (proposalId, voter) => {
@@ -228,7 +228,7 @@ export class ConfidentialVotingService {
     })
   }
 
-  onProposalEnded(callback: (proposalId: number, yesVotes: number, noVotes: number) => void) {
+  onProposalEnded(callback: (_proposalId: number, _yesVotes: number, _noVotes: number) => void) {
     if (!this.contract) return
 
     this.contract.on('ProposalEnded', (proposalId, yesVotes, noVotes) => {
