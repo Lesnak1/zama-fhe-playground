@@ -12,8 +12,6 @@ export const metadata: Metadata = {
   description: 'Interactive platform to learn, experiment, and build with Fully Homomorphic Encryption (FHE) on Zama Protocol. Explore confidential smart contracts and privacy-preserving applications.',
   keywords: 'FHE, Fully Homomorphic Encryption, Zama, blockchain, privacy, confidential computing, smart contracts, FHEVM',
   authors: [{ name: 'Zama Protocol' }],
-  viewport: 'width=device-width, initial-scale=1',
-  themeColor: '#FCDC00',
   openGraph: {
     title: 'Zama FHE Playground',
     description: 'Interactive platform to learn and experiment with Fully Homomorphic Encryption',
@@ -37,6 +35,12 @@ export const metadata: Metadata = {
       'max-snippet': -1,
     },
   },
+}
+
+export const viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  themeColor: '#FCDC00',
 }
 
 export default function RootLayout({
